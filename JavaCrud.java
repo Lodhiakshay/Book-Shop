@@ -8,8 +8,6 @@ import java.awt.Font;
 import javax.swing.JPanel;
 import javax.swing.border.TitledBorder;
 
-import com.mysql.cj.xdevapi.Schema.CreateCollectionOptions;
-
 import net.proteanit.sql.DbUtils;
 
 import javax.swing.border.EtchedBorder;
@@ -22,8 +20,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.io.NotActiveException;
-import javax.swing.ImageIcon;
 
 public class JavaCrud {
 
@@ -40,6 +36,7 @@ public class JavaCrud {
 				try {
 					JavaCrud window = new JavaCrud();
 					window.frame.setVisible(true);
+					window.frame.setResizable(false);
 
 				} catch (Exception e) {
 					e.printStackTrace();
